@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Helvetica Neue Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Neue Light'), url('../fonts/helveticaneue/HelveticaNeueLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Neue Medium'), url('../fonts/helveticaneue/HelveticaNeueMedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Neue Bold'), url('../fonts/helveticaneue/HelveticaNeueBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Novecento Sans Wide';
+  src: url('../fonts/novecentosanswide/Novecentosanswide-DemiBold-webfont.eot');
+  src: url('../fonts/novecentosanswide/Novecentosanswide-DemiBold-webfont.eot') format('embedded-opentype'), url('../fonts/novecentosanswide/Novecentosanswide-DemiBold-webfont.woff2') format('woff2'), url('../fonts/novecentosanswide/Novecentosanswide-DemiBold-webfont.woff') format('woff'), url('../fonts/novecentosanswide/Novecentosanswide-DemiBold-webfont.ttf') format('truetype'), url('../fonts/novecentosanswide/Novecentosanswide-DemiBold-webfont.svg#novecento_sans_wide_bookbold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin pacific {
+  font-family: 'Pacifico', cursive;
+}
+
+@mixin novecento {
+  font-family: 'Novecento Sans Wide';
+}
+
+@mixin helvetica-l {
+  font-family: 'Helvetica Neue Light';
+}
+@mixin helvetica-m {
+  font-family: 'Helvetica Neue Medium';
+}
+@mixin helvetica-b {
+  font-family: 'Helvetica Neue Bold';
+}

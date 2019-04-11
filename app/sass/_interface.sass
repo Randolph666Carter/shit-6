@@ -1,0 +1,63 @@
+.button
+  width: 103px
+  height: 34px
+  +novecento
+  text-transform: uppercase
+  color: #fff
+  background: $main
+  border: 2px solid $main
+  outline: none
+  position: relative
+  overflow: hidden
+  &:hover
+    cursor: pointer
+    &::before
+      left: 250px
+      transition: 0.7s
+  &:active
+    color: #63974B
+    border-color: #63974B
+  &:focus
+    outline: none
+  &::before
+    content: ""
+    width: 60px
+    height: 60px
+    background: linear-gradient(to left, rgba(255,255,255, 0.6), rgba(255,255,255, 0.1))
+    opacity: 0.5
+    transform: skewX(-40deg)
+    position: absolute
+    top: -10px
+    left: -150px
+  &--o
+    width: 103px
+    height: 34px
+    +novecento
+    text-transform: uppercase
+    font-size: 0.75em
+    color: #fff
+    outline: none
+    background: transparent
+    border: 2px solid #fff
+    position: relative
+    overflow: hidden
+    &:hover
+      cursor: pointer
+      &::before
+        left: 250px
+        transition: 0.7s
+    &:active
+      color: $main
+      border-color: $main
+    &:focus
+      outline: none
+    &::before
+      content: ""
+      width: 60px
+      height: 60px
+      background: linear-gradient(to left, rgba(255,255,255, 0.5), rgba(255,255,255, 0.1))
+      opacity: 0.3
+      transform: skewX(-40deg)
+      position: absolute
+      top: -10px
+      left: -150px
