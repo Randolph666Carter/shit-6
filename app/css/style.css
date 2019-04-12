@@ -107,17 +107,57 @@
       top: -10px;
       left: -150px; }
 
-.header-slider {
+.header {
   width: 100%;
   height: 505px;
   background: url("../img/slider/slider-1.jpg") no-repeat center;
   -webkit-background-size: cover;
           background-size: cover;
   position: relative; }
+  .header__content {
+    width: 70%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    bottom: 24.5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .header__title {
+    font-family: 'Novecento Sans Wide';
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.93em;
+    margin-bottom: 13px; }
+    .header__title--key {
+      color: #87B672; }
+  .header__subtitle {
+    font-family: 'Helvetica Neue Light';
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 21px; }
 
 .topnav {
   width: 74%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
   .topnav__main {
     height: 98px;
     display: -webkit-box;
@@ -178,40 +218,65 @@
       float: right;
       margin-right: 0; }
 
-.header__content {
-  width: 70%;
-  outline: 1px solid red;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  bottom: 24.5%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%); }
-
-.header__title {
-  font-family: 'Novecento Sans Wide';
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 1.93em;
-  margin-bottom: 13px; }
-  .header__title--key {
-    color: #87B672; }
-
-.header__subtitle {
-  font-family: 'Helvetica Neue Light';
-  color: #fff;
-  font-size: 1.2em;
-  margin-bottom: 21px; }
+.header-slider {
+  width: 100%;
+  height: 505px;
+  position: relative; }
+  .header-slider__wrap {
+    position: relative; }
+  .header-slider--item1 {
+    width: 100%;
+    height: 505px;
+    background: url("../img/slider/slider-1.jpg") no-repeat center;
+    -webkit-background-size: contain;
+            background-size: contain; }
+  .header-slider--item2 {
+    width: 100%;
+    height: 505px;
+    background: url("../img/slider/slider-2.jpg") no-repeat center;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .header-slider--item3 {
+    width: 100%;
+    height: 505px;
+    background: url("../img/slider/rally1.jpg") no-repeat center;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .header-slider--item4 {
+    width: 100%;
+    height: 505px;
+    background: url("../img/slider/rally4.jpg") no-repeat center;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .header-slider .slick-dots {
+    width: 10%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: 10%; }
+    .header-slider .slick-dots li {
+      width: 20px;
+      margin: 0; }
+      .header-slider .slick-dots li button {
+        margin: 0;
+        width: 5px;
+        height: 5px;
+        background: #fff;
+        -webkit-border-radius: 50%;
+                border-radius: 50%; }
+        .header-slider .slick-dots li button::before {
+          content: ""; }
+  .header-slider .slick-active button {
+    width: 15px !important;
+    height: 15px  !important; }
+  .header-slider .slick-prev {
+    left: 5%;
+    z-index: 9999; }
+  .header-slider .slick-next {
+    right: 9%;
+    z-index: 9999; }
+  .header-slider .slick-prev:before, .header-slider .slick-next:before {
+    font-size: 4rem;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
