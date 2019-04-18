@@ -59,7 +59,7 @@
     </header>
     <!-- /.header -->
     <section class="services">
-      <div class="intro">
+      <div class="intro services__intro">
         <h2 class="intro__title">We are a Small Team Doing Big Things!</h2>
         <span class="intro__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.</span>
       </div>
@@ -137,33 +137,35 @@
       </div>
       <button class="button call-to-action__button">Purchase</button>
     </section>
+    <!-- /.call-to-action -->
+
     <footer class="footer">
-      <div class="footer__row">
+      <div class="footer__row footer__row--top">
         <div class="footer__row--inner">
           <div class="topnav__main footer__row--topnav-main">
-            <a class="topnav__logo" href="#">Deliver</a>
+            <a class="topnav__logo footer__row--logo" href="#">Deliver</a>
             <!-- /.topnav__logo -->
-            <ul class="topnav__social">
-              <a class="topnav__social--link" href="#"><li class="topnav__social--item"><i class="fab fa-twitter"></i></li></a>
-              <a class="topnav__social--link" href="#"><li class="topnav__social--item"><i class="fab fa-facebook-f"></i></li></a></a>
-              <a class="topnav__social--link" href="#"><li class="topnav__social--item"><i class="fas fa-rss"></i></li></a>
+            <ul class="topnav__social footer__row--social-inner">
+              <a class="topnav__social--link" href="#"><li class="topnav__social--item footer__row--social"><i class="fab fa-twitter"></i></li></a>
+              <a class="topnav__social--link" href="#"><li class="topnav__social--item footer__row--social"><i class="fab fa-facebook-f"></i></li></a></a>
+              <a class="topnav__social--link" href="#"><li class="topnav__social--item footer__row--social"><i class="fas fa-rss"></i></li></a>
             </ul>
             <!-- /.topnav__social -->
           </div>
           <!-- /.footer__row-topnav-main -->
-          <p class="topnav-main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida quam quis nunc rutrum placerat. Proin eu mi vitae neque veh interdum id nec turpis nam auctor faucibus sollicitudin.</p>
+          <p class="footer__row--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida quam quis nunc rutrum placerat. Proin eu mi vitae neque veh interdum id nec turpis nam auctor faucibus sollicitudin.</p>
         </div>
         <!-- /.footer__row-inner -->
-        <div class="footer__column">
+        <div class="footer__column footer__column--contact">
           <span class="footer__column--title">Contact info</span>
           <p class="footer__column--adress">222 Ave C South<br>Saskatoon, Saskatchewan<br>Canada S7K 2N5</p>
           <a class="footer__column--email" href="#">info@deliver.ca</a>
           <p class="footer__column--counter">1.306.222.3456</p>
         </div>
         <!-- /.footer__column -->
-        <div class="footer__column">
+        <div class="footer__column footer__column--list">
           <span class="footer__column--title">Quick Links</span>
-          <ul class="footer__column--list">
+          <ul class="footer__list">
             <li class="footer__column--item"><a href="#" class="footer__column--link">Portfolio</a></li>
             <li class="footer__column--item"><a href="#" class="footer__column--link">About</a></li>
             <li class="footer__column--item"><a href="#" class="footer__column--link">Archive</a></li>
@@ -173,12 +175,22 @@
           </ul>
         </div>
         <!-- /.footer__column -->
-        <div class="footer__column"></div>
+        <div class="footer__column footer__column--form">
+          <span class="footer__column--title">Newsletter</span>
+          <p class="footer__column--text footer__form--text">Lorem ipsum dolor sit amet dolor consectetur adipiscing elit.</p>
+          <input type="email" class="footer__form" placeholder="Email">
+          <button class="footer__form--button">Ok</button>
+        </div>
         <!-- /.footer__column -->
       </div>
       <!-- /.footer__row -->
-      <div class="footer__row">
-
+      <div class="footer__row footer__row--bottom">
+        <span class="footer__row--copy">Copyright 2013 Deliver. All Rights Reserved.</span>
+        <ul class="footer__list footer__copy--list">
+          <li class="footer__row--item"><a href="#" class="footer__row--link">About</a></li>
+          <li class="footer__row--item"><a href="#" class="footer__row--link">Privacy Policy</a></li>
+          <li class="footer__row--item"><a href="#" class="footer__row--link">Contact</a></li>
+        </ul>
       </div>
       <!-- /.footer__row -->
     </footer>

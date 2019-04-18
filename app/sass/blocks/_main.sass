@@ -1,6 +1,4 @@
 .header
-  background: url('../img/slider/slider-1.jpg') no-repeat center
-  background-size: cover
   position: relative
   &__content
     width: 70%
@@ -8,71 +6,74 @@
     flex-direction: column
     align-items: center
     position: absolute
-    bottom: 24.5%
+    bottom: 25.2%
     left: 50%
     transform: translateX(-50%)
   &__title
     +novecento
     text-transform: uppercase
     color: #fff
-    font-size: 1.93em
-    margin-bottom: 13px
+    font-size: 2.3em
+    line-height: 1.05em
+    margin-bottom: 0.45em
     &--key
       color: $main
   &__subtitle
     +helvetica-l
     color: #fff
-    font-size: 1.2em
-    margin-bottom: 21px
+    font-size: 1.41rem
+    line-height: 1.5em
+    margin-bottom: 1em
 
 
 
 .topnav
-  width: 74%
+  width: 73.8%
   margin: 0 auto
   position: absolute
   top: 0
   left: 50%
   transform: translateX(-50%)
   &__main
-    height: 98px
+    height: 116px
     display: flex
     justify-content: space-between
     align-items: center
     border-bottom: 1px solid #fff
   &__logo
     +pacific
-    font-size: 2em
+    font-size: 2.5em
     color: #fff
     text-decoration: none
   &__social
     list-style: none
-    margin-right: 4px
+    margin-top: 20px
+    &:last-child
+      margin-right: 2px
     &--item
       display: inline-block
-      width: 29px
-      height: 29px
+      width: 34px
+      height: 34px
       background: #fff
       opacity: 0.5
       border-radius: 50%
       text-align: center
-      font-size: 1em
-      line-height: 2em
-      margin-top: 18px
-      margin-left: 4px
+      font-size: 1.1em
+      line-height: 2.1em
+      margin-left: 6px
       &:hover
         opacity: 1
     &--link
       color: #6C6050
   &__menu
-    margin-top: 20px
+    margin-top: 1.3em
     +novecento
     text-transform: uppercase
     list-style: none
-    font-size: 1em
+    font-size: 1.15rem
     &--item
       display: inline-block
-      margin-right: 27px
+      margin-right: 1.85em
       &:first-child .topnav__menu--link
         color: $main
     &--link
@@ -86,28 +87,22 @@
 
 
 .header-slider
-  width: 100%
-  height: 505px
   position: relative
   &__wrap
     position: relative
   &--item1
-    width: 100%
-    height: 505px
+    height: 600px
     background: url('../img/slider/slider-1.jpg') no-repeat center
     background-size: cover
   &--item2
-    width: 100%
     height: 505px
     background: url('../img/slider/slider-2.jpg') no-repeat center
     background-size: cover
   &--item3
-    width: 100%
     height: 505px
     background: url('../img/slider/rally1.jpg') no-repeat center
     background-size: cover
   &--item4
-    width: 100%
     height: 505px
     background: url('../img/slider/rally4.jpg') no-repeat center
     background-size: cover

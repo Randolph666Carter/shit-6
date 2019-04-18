@@ -1,9 +1,135 @@
 .footer
+  height: 360px
   background: #333333
   &__row
-    width: 74%
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    width: 73.8%
     margin: 0 auto
+    &--item
+      font-size: 0.8rem
+      display: inline-block
+      padding-right: 0.5em
+      &:nth-child(3)
+        padding-right: 0
+      &::after
+        content: "/"
+        color: #9B9999
+        padding-left: 0.5em
+      &:nth-child(3)::after
+        display: none
+    &--top
+      padding-top: 3em
+      padding-bottom: 3.35em
+    &--bottom
+      padding-top: 2em
+      height: 20%
+      border-top: 1px solid #808080
     &--inner
       width: 40%
+    &--text
+      margin-top: -0.5em
+      padding-right: 1.2em
+      +helvetica-l
+      color: #9B9999
+      font-size: 0.91rem
+      line-height: 1.67em
     &--topnav-main
+      height: auto
       border-bottom: none
+    &--logo
+      line-height: 2.5em
+    &--social
+      width: 30px
+      height: 30px
+      &-inner
+        margin-top: 0
+        &:last-child
+          margin-right: 35px
+    &--copy
+      +helvetica-m
+      color: #9B9999
+      text-transform: uppercase
+      font-size: 0.75rem
+      line-height: 0.85em
+    &--link
+      +helvetica-l
+      text-decoration: none
+      color: #9B9999
+      text-transform: uppercase
+      &:hover
+        text-decoration: underline
+  &__list
+    list-style: none
+    margin-top: 0.85em
+  &__column
+    &--item
+      margin-top: 0.27em
+    &--title
+      font-size: 1.2rem
+      line-height: 2em
+      +novecento
+      color: #FEFEFE
+      text-transform: uppercase
+    &--text, &--text, &--adress, &--email, &--link
+      +helvetica-l
+      color: #9B9999
+    &--adress
+      margin-top: 0.8em
+      line-height: 1.6em
+      font-size: 0.9rem
+      margin-bottom: 0.85em
+    &--contact
+      flex-basis: 17%
+    &--list
+      flex-basis: 12.5%
+    &--form
+      flex-basis: 18.7%
+    &--email
+      font-size: 0.9rem
+      text-decoration: none
+    &--link
+      text-decoration: none
+      color: #9B9999
+      font-size: 0.9rem
+      &::before
+        padding-right: 0.7em
+        content: "\f054"
+        font-family: "Font Awesome 5 Free"
+        font-weight: 900
+        font-size: 0.7rem
+      &:hover
+        text-decoration: underline
+    &--counter
+      margin-top: 1.1em
+      color: #FEFEFE
+      +helvetica-m
+  &__form
+    width: 162px
+    height: 40px
+    padding-left: 15px
+    background-color: #4E4C4C
+    border: none
+    outline: none
+    &:focus
+      outline: 1px solid $main
+    &--button
+      width: 53px
+      height: 40px
+      background-color: #828282
+      color: #fff
+      border: none
+      outline: none
+      text-transform: uppercase
+      font-weight: bold
+    &--text
+      margin-top: 0.8em
+      font-size: 0.85rem
+      line-height: 1.8em
+      margin-bottom: 1.7em
+  &__copy
+    &--list
+      font-size: 1rem
+      margin-top: 0
+      line-height: 0.6em
